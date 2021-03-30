@@ -11,10 +11,16 @@ call plug#end()
 
 map <leader>g :Goyo <CR>
 map <leader>s :setlocal spell! spelllang=en_us<CR>
-map <leader>i I*<Esc>A*<Esc>0
-map <leader>l :!pdflatex %<CR> <CR>
 map <leader>ve :split ~/.vimrc<CR>
 map <leader>vr :source ~/.vimrc<CR>
+map <leader>n /<++><CR>
+
+" Markdown Stuff
+map <leader>i I*<Esc>A*<Esc>0
+
+" Latex Stuff
+map <leader>l :!pdflatex %<CR> <CR>
+map <leader>le o\begin{<++>}<Esc>o\end{<++>}<Esc>k0/<++><CR>
 
 set splitright splitbelow
 
