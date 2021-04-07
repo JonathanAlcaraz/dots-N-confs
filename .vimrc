@@ -19,7 +19,7 @@ map <leader>n /<++><CR>
 map <leader>i I*<Esc>A*<Esc>0
 
 " Latex Stuff
-map <leader>l :!pdflatex %<CR> <CR>
+map <leader>lc :!pdflatex %<CR> <CR>
 map <leader>le o\begin{<++>}<Esc>o\end{<++>}<Esc>k0/<++><CR>
 
 set splitright splitbelow
