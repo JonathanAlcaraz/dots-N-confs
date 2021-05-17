@@ -11,7 +11,7 @@ call plug#end()
 
 map <leader>g :Goyo <CR>
 map <leader>s :setlocal spell! spelllang=en_us<CR>
-map <leader>ve :split ~/.vimrc<CR>
+map <leader>ve :tabedit ~/.vimrc<CR>
 map <leader>vr :source ~/.vimrc<CR>
 map <leader>n /<++><CR>
 
@@ -45,6 +45,7 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+nnoremap <C-E> <C-W>40>
 nnoremap <S-j> 20j
 nnoremap <S-k> 20k
 
