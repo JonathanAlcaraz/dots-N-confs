@@ -13,7 +13,9 @@ map <leader>g :Goyo <CR>
 map <leader>s :setlocal spell! spelllang=en_us<CR>
 map <leader>ve :tabedit ~/.vimrc<CR>
 map <leader>vr :source ~/.vimrc<CR>
-map <leader>n /<++><CR>
+map <leader>m <Right>i<++><Esc>
+map <leader>j /<++><CR>
+map <leader>k ?<++><CR>
 
 " Markdown Stuff
 map <leader>i I*<Esc>A*<Esc>0
