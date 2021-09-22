@@ -1,8 +1,14 @@
 #!/bin/bash
 
-list=(".vimrc" ".Xresources" ".config/fish/config.fish" ".config/zathura/zathurarc")
+ln -s ~/dots-N-confs/.vimrc ~/
+ln -s ~/dots-N-confs/.Xresources ~/
 
-for file in ${list[*]}
+dirs=$(ls -1 ~/dots-N-confs/.config/)
+
+for dir in ${dirs[*]}
 do
-  ln -s ~/dots-N-confs/$file ~/$file
+  if [ ! -d ~/.config/$dir ]; then
+    mkdir ~/.config/$dir
+  fi
+  ln -s ~/dots-N-confs/.config/$dir/* ~/.config/$dir/
 done
